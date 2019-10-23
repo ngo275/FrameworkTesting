@@ -12,13 +12,13 @@ extension Bundle {
 
     private static let bundleID = "one.credify.OriginalFramework"
 
-    static var module: Bundle {
-        guard let path = Bundle(identifier: bundleID)?.resourcePath else { return .main }
-        return Bundle(path: path.appending("/OriginalFramework.bundle")) ?? .main
-    }
-    
 //    static var module: Bundle {
-//        return Bundle(identifier: bundleID) ?? .main
+//        guard let path = Bundle(identifier: bundleID)?.resourcePath else { return .main }
+//        return Bundle(path: path.appending("/OriginalFramework.bundle")) ?? .main
 //    }
+    
+    static var module: Bundle {
+        return Bundle(identifier: bundleID) ?? .main
+    }
 
 }

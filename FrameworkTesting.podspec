@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "FrameworkTesting"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A testing framework"
   spec.description  = "A testing framework about resource, internal Cocoapods usage, strings, etc..."
 
@@ -17,9 +17,9 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/ngo275/FrameworkTesting.git", :tag => "#{spec.version}" }
   spec.source_files  = "OriginalFramework/**/*.{swift,m,h}"
   spec.public_header_files = "OriginalFramework/**/*.h"
-  spec.resource_bundle = { "OriginalFramework" => ["OriginalFramework/*.lproj/*.strings"] }
+  #spec.resource_bundle = { "OriginalFramework" => ["OriginalFramework/*.lproj/*.strings"] }
   # spec.resource  = "icon.png"
-  # spec.resources = "Resources/*.png"
+  spec.resources = "OriginalFramework/**/*.lproj"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
