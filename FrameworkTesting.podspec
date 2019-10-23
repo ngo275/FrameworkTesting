@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "FrameworkTesting"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "A testing framework"
   spec.description  = "A testing framework about resource, internal Cocoapods usage, strings, etc..."
 

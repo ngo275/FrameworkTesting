@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var button: UIButton!
     
     static func instantiate() -> UINavigationController {
-        let sb = UIStoryboard(name: "Login", bundle: Bundle.module)
+        let sb = UIStoryboard(name: "Login", bundle: Bundle(for: LoginViewController.self))
         let vc = sb.instantiateInitialViewController() as! UINavigationController
         return vc
     }
@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
     }
     
     func setupTexts() {
-        button.setTitle("Button".localized(), for: .normal)
+        button.setTitle("Button".localized(bundle: Bundle(for: LoginViewController.self), tableName: "Login"), for: .normal)
     }
     
     @IBAction func tapButton(_ sender: Any) {

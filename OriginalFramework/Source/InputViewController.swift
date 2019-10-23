@@ -11,7 +11,7 @@ import UIKit
 class InputViewController: UIViewController {
 
     static func instantiate() -> InputViewController {
-        let sb = UIStoryboard(name: "Input", bundle: Bundle.module)
+        let sb = UIStoryboard(name: "Input", bundle: Bundle(for: InputViewController.self))
         let vc = sb.instantiateInitialViewController() as! InputViewController
         return vc
     }
