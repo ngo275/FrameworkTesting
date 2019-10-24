@@ -14,7 +14,7 @@
 		25A223DE23617020004CF7BB /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A223D823617020004CF7BB /* Quicksand-Medium.ttf */; };
 		25A223DF23617020004CF7BB /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A223D923617020004CF7BB /* Quicksand-Regular.ttf */; };
 		25A223E023617020004CF7BB /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A223DA23617020004CF7BB /* Quicksand-Light.ttf */; };
-		25A223E123617020004CF7BB /* ABEAKRG.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 25A223DB23617020004CF7BB /* ABEAKRG.TTF */; };
+		25A223E123617020004CF7BB /* ABEAKRG.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A223DB23617020004CF7BB /* ABEAKRG.ttf */; };
 		25A223E223617020004CF7BB /* abeatbyKaiRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25A223DC23617020004CF7BB /* abeatbyKaiRegular.otf */; };
 		25A223E4236170E8004CF7BB /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A223E3236170E8004CF7BB /* UIFont+Extension.swift */; };
 		25F371EB236069790012BECF /* OriginalFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F371E1236069790012BECF /* OriginalFramework.framework */; };
@@ -50,7 +50,7 @@
 		25A223D823617020004CF7BB /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
 		25A223D923617020004CF7BB /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
 		25A223DA23617020004CF7BB /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
-		25A223DB23617020004CF7BB /* ABEAKRG.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ABEAKRG.TTF; sourceTree = "<group>"; };
+		25A223DB23617020004CF7BB /* ABEAKRG.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ABEAKRG.ttf; sourceTree = "<group>"; };
 		25A223DC23617020004CF7BB /* abeatbyKaiRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = abeatbyKaiRegular.otf; sourceTree = "<group>"; };
 		25A223E3236170E8004CF7BB /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		25F371E1236069790012BECF /* OriginalFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OriginalFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,7 +100,7 @@
 				25A223D823617020004CF7BB /* Quicksand-Medium.ttf */,
 				25A223D923617020004CF7BB /* Quicksand-Regular.ttf */,
 				25A223DA23617020004CF7BB /* Quicksand-Light.ttf */,
-				25A223DB23617020004CF7BB /* ABEAKRG.TTF */,
+				25A223DB23617020004CF7BB /* ABEAKRG.ttf */,
 				25A223DC23617020004CF7BB /* abeatbyKaiRegular.otf */,
 			);
 			path = Fonts;
@@ -264,7 +264,7 @@
 				25A223DE23617020004CF7BB /* Quicksand-Medium.ttf in Resources */,
 				25A223E223617020004CF7BB /* abeatbyKaiRegular.otf in Resources */,
 				25A223E023617020004CF7BB /* Quicksand-Light.ttf in Resources */,
-				25A223E123617020004CF7BB /* ABEAKRG.TTF in Resources */,
+				25A223E123617020004CF7BB /* ABEAKRG.ttf in Resources */,
 				25A223DF23617020004CF7BB /* Quicksand-Regular.ttf in Resources */,
 				25F372502361315E0012BECF /* Input.strings in Resources */,
 				25F3720D236099530012BECF /* Input.storyboard in Resources */,
