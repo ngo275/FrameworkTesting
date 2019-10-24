@@ -11,6 +11,7 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var imageView: UIImageView!
     
     static func instantiate() -> UINavigationController {
         let sb = UIStoryboard(name: "Login", bundle: Bundle(for: LoginViewController.self))
@@ -22,10 +23,15 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         setupTexts()
+        setupImage()
     }
     
     func setupTexts() {
         button.setTitle("Button".localized(bundle: Bundle(for: LoginViewController.self), tableName: "Login"), for: .normal)
+    }
+    
+    func setupImage() {
+        imageView.image = UIImage(named: "ic_pincode_on", in: Bundle(for: LoginViewController.self), compatibleWith: nil)
     }
     
     @IBAction func tapButton(_ sender: Any) {
