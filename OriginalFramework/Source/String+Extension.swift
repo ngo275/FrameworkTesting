@@ -15,6 +15,6 @@ extension String {
         if defaultValue.isEmpty {
             dv = "**\(self)**"
         }
-        return NSLocalizedString(self, tableName: tableName, bundle: Bundle.module, value: dv, comment: "")
+        return NSLocalizedString(self, tableName: tableName, bundle: bundle, value: dv, comment: "")
     }
 }
