@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "FrameworkTesting"
-  spec.version      = "0.0.6"
+  spec.version      = "0.0.7"
   spec.summary      = "A testing framework"
   spec.description  = "A testing framework about resource, internal Cocoapods usage, strings, etc..."
 
@@ -17,6 +17,8 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/ngo275/FrameworkTesting.git", :tag => "#{spec.version}" }
   spec.source_files  = "OriginalFramework/**/*.{swift,m,h}"
   spec.public_header_files = "OriginalFramework/**/*.h"
+  spec.frameworks = "UIKit", "Foundation"
+  spec.vendored_frameworks = "OriginalFramework/HDWallet.framework"
   #spec.resource_bundle = { "OriginalFramework" => ["OriginalFramework/*.lproj/*.strings"] }
   # spec.resource  = "icon.png"
   spec.resources = "OriginalFramework/**/*.{lproj,storyboard}"
@@ -24,8 +26,6 @@ Pod::Spec.new do |spec|
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
   # spec.framework  = "SomeFramework"
-  spec.frameworks = "UIKit", "Foundation"
-  spec.vendored_frameworks = "OriginalFramework/HDWallet.framework"
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
