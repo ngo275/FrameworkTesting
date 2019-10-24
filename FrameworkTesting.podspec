@@ -24,7 +24,8 @@ Pod::Spec.new do |spec|
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
   # spec.framework  = "SomeFramework"
-  spec.frameworks = "UIKit", "Foundation", "HDWallet"
+  spec.frameworks = "UIKit", "Foundation"
+  spec.vendored_frameworks = "OriginalFramework/HDWallet.framework"
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
