@@ -10,10 +10,12 @@ import UIKit
 
 public struct TestFramework {
     public static func getVC() -> UINavigationController {
+        UIFont.loadMyFonts
         return LoginViewController.instantiate()
     }
     
     public static func start() {
+        UIFont.loadMyFonts
         let vc = LoginViewController.instantiate()
         let window = UIApplication.shared.keyWindow
         window?.rootViewController = vc

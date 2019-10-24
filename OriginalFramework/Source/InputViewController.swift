@@ -31,12 +31,18 @@ class InputViewController: UIViewController {
         
         setTexts()
         interactHDWallet()
+        setFont()
     }
     
     private func setTexts() {
         pubKeyLabel.text = "PubKey".localized(bundle: Bundle(for: InputViewController.self), tableName: "Input")
         privKeyLabel.text = "PrivKey".localized(bundle: Bundle(for: InputViewController.self), tableName: "Input")
         mnemonicLabel.text = "Mnemonic".localized(bundle: Bundle(for: InputViewController.self), tableName: "Input")
+    }
+    
+    private func setFont() {
+        privKeyLabel.font = UIFont.abeatbyKai()
+        mnemonicLabel.font = UIFont.quicksand()
     }
 
     private func interactHDWallet() {

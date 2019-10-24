@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25A223D123616EC4004CF7BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A223D023616EC4004CF7BB /* Assets.xcassets */; };
+		25A223D323616EF7004CF7BB /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A223D223616EF7004CF7BB /* Extension.swift */; };
+		25A223D523616F16004CF7BB /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A223D423616F16004CF7BB /* UIColor+Extension.swift */; };
+		25A223DD23617020004CF7BB /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A223D723617020004CF7BB /* Quicksand-Bold.ttf */; };
+		25A223DE23617020004CF7BB /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A223D823617020004CF7BB /* Quicksand-Medium.ttf */; };
+		25A223DF23617020004CF7BB /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A223D923617020004CF7BB /* Quicksand-Regular.ttf */; };
+		25A223E023617020004CF7BB /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A223DA23617020004CF7BB /* Quicksand-Light.ttf */; };
+		25A223E123617020004CF7BB /* ABEAKRG.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 25A223DB23617020004CF7BB /* ABEAKRG.TTF */; };
+		25A223E223617020004CF7BB /* abeatbyKaiRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25A223DC23617020004CF7BB /* abeatbyKaiRegular.otf */; };
+		25A223E4236170E8004CF7BB /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A223E3236170E8004CF7BB /* UIFont+Extension.swift */; };
 		25F371EB236069790012BECF /* OriginalFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F371E1236069790012BECF /* OriginalFramework.framework */; };
 		25F371F0236069790012BECF /* OriginalFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F371EF236069790012BECF /* OriginalFrameworkTests.swift */; };
 		25F371F2236069790012BECF /* OriginalFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F371E4236069790012BECF /* OriginalFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,6 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25A223D023616EC4004CF7BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25A223D223616EF7004CF7BB /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		25A223D423616F16004CF7BB /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		25A223D723617020004CF7BB /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
+		25A223D823617020004CF7BB /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
+		25A223D923617020004CF7BB /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		25A223DA23617020004CF7BB /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
+		25A223DB23617020004CF7BB /* ABEAKRG.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ABEAKRG.TTF; sourceTree = "<group>"; };
+		25A223DC23617020004CF7BB /* abeatbyKaiRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = abeatbyKaiRegular.otf; sourceTree = "<group>"; };
+		25A223E3236170E8004CF7BB /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		25F371E1236069790012BECF /* OriginalFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OriginalFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F371E4236069790012BECF /* OriginalFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OriginalFramework.h; sourceTree = "<group>"; };
 		25F371E5236069790012BECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +93,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25A223D623617020004CF7BB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				25A223D723617020004CF7BB /* Quicksand-Bold.ttf */,
+				25A223D823617020004CF7BB /* Quicksand-Medium.ttf */,
+				25A223D923617020004CF7BB /* Quicksand-Regular.ttf */,
+				25A223DA23617020004CF7BB /* Quicksand-Light.ttf */,
+				25A223DB23617020004CF7BB /* ABEAKRG.TTF */,
+				25A223DC23617020004CF7BB /* abeatbyKaiRegular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		25F371D7236069790012BECF = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +147,8 @@
 		25F371FB2360698F0012BECF /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				25A223D023616EC4004CF7BB /* Assets.xcassets */,
+				25A223D623617020004CF7BB /* Fonts */,
 				25F371FC2360956D0012BECF /* LoginViewController.swift */,
 				25F371FE236095750012BECF /* Login.storyboard */,
 				25F37200236097FB0012BECF /* String+Extension.swift */,
@@ -123,6 +158,9 @@
 				25F3720C236099530012BECF /* Input.storyboard */,
 				25F3720E23609A120012BECF /* Main.swift */,
 				25F372522361315E0012BECF /* Input.strings */,
+				25A223D223616EF7004CF7BB /* Extension.swift */,
+				25A223D423616F16004CF7BB /* UIColor+Extension.swift */,
+				25A223E3236170E8004CF7BB /* UIFont+Extension.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -222,9 +260,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				25F37206236098ED0012BECF /* Login.strings in Resources */,
+				25A223DD23617020004CF7BB /* Quicksand-Bold.ttf in Resources */,
+				25A223DE23617020004CF7BB /* Quicksand-Medium.ttf in Resources */,
+				25A223E223617020004CF7BB /* abeatbyKaiRegular.otf in Resources */,
+				25A223E023617020004CF7BB /* Quicksand-Light.ttf in Resources */,
+				25A223E123617020004CF7BB /* ABEAKRG.TTF in Resources */,
+				25A223DF23617020004CF7BB /* Quicksand-Regular.ttf in Resources */,
 				25F372502361315E0012BECF /* Input.strings in Resources */,
 				25F3720D236099530012BECF /* Input.storyboard in Resources */,
 				25F371FF236095750012BECF /* Login.storyboard in Resources */,
+				25A223D123616EC4004CF7BB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,10 +287,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25A223D523616F16004CF7BB /* UIColor+Extension.swift in Sources */,
 				25F3720F23609A120012BECF /* Main.swift in Sources */,
 				25F37201236097FB0012BECF /* String+Extension.swift in Sources */,
 				25F372032360985A0012BECF /* Bundle+Extension.swift in Sources */,
+				25A223D323616EF7004CF7BB /* Extension.swift in Sources */,
 				25F371FD2360956D0012BECF /* LoginViewController.swift in Sources */,
+				25A223E4236170E8004CF7BB /* UIFont+Extension.swift in Sources */,
 				25F3720B2360994B0012BECF /* InputViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "FrameworkTesting"
-  spec.version      = "0.0.9"
+  spec.version      = "0.0.10"
   spec.summary      = "A testing framework"
   spec.description  = "A testing framework about resource, internal Cocoapods usage, strings, etc..."
 
@@ -21,7 +21,7 @@ Pod::Spec.new do |spec|
   spec.vendored_frameworks = "OriginalFramework/HDWallet.framework"
   #spec.resource_bundle = { "OriginalFramework" => ["OriginalFramework/*.lproj/*.strings"] }
   # spec.resource  = "icon.png"
-  spec.resources = "OriginalFramework/**/*.{lproj,storyboard}"
+  spec.resources = "OriginalFramework/**/*.{lproj,storyboard,ttf,otf,xcassets}"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
