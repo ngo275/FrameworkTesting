@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "FrameworkTesting"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "A testing framework"
   spec.description  = "A testing framework about resource, internal Cocoapods usage, strings, etc..."
 
@@ -24,7 +24,7 @@ Pod::Spec.new do |spec|
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
   # spec.framework  = "SomeFramework"
-  spec.frameworks = "UIKit", "Foundation"
+  spec.frameworks = "UIKit", "Foundation", "HDWallet"
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }

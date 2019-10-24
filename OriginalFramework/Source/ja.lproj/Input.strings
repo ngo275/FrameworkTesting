@@ -1,0 +1,11 @@
+/* 
+  Input.strings
+  OriginalFramework
+
+  Created by ShuichiNagao on 2019/10/24.
+  Copyright © 2019 Shuichi Nagao. All rights reserved.
+*/
+
+"PubKey" = "公開鍵";
+"PrivKey" = "秘密鍵";
+"Mnemonic" = "ニーモニック";
