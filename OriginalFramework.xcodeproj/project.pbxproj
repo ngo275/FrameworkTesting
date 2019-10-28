@@ -17,6 +17,7 @@
 		25A223E123617020004CF7BB /* ABEAKRG.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25A223DB23617020004CF7BB /* ABEAKRG.ttf */; };
 		25A223E223617020004CF7BB /* abeatbyKaiRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25A223DC23617020004CF7BB /* abeatbyKaiRegular.otf */; };
 		25A223E4236170E8004CF7BB /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A223E3236170E8004CF7BB /* UIFont+Extension.swift */; };
+		25A2242723630C96004CF7BB /* HDWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F3724C23612E220012BECF /* HDWallet.framework */; };
 		25F371EB236069790012BECF /* OriginalFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F371E1236069790012BECF /* OriginalFramework.framework */; };
 		25F371F0236069790012BECF /* OriginalFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F371EF236069790012BECF /* OriginalFrameworkTests.swift */; };
 		25F371F2236069790012BECF /* OriginalFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F371E4236069790012BECF /* OriginalFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,8 +29,9 @@
 		25F3720B2360994B0012BECF /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F3720A2360994B0012BECF /* InputViewController.swift */; };
 		25F3720D236099530012BECF /* Input.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F3720C236099530012BECF /* Input.storyboard */; };
 		25F3720F23609A120012BECF /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F3720E23609A120012BECF /* Main.swift */; };
-		25F3724D23612E220012BECF /* HDWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F3724C23612E220012BECF /* HDWallet.framework */; };
 		25F372502361315E0012BECF /* Input.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25F372522361315E0012BECF /* Input.strings */; };
+		25F5F5E623667D9800545142 /* BLTNBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F5F5E223667D7A00545142 /* BLTNBoard.framework */; };
+		25F5F5E723667D9800545142 /* BLTNBoard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25F5F5E223667D7A00545142 /* BLTNBoard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,42 @@
 			remoteGlobalIDString = 25F371E0236069790012BECF;
 			remoteInfo = OriginalFramework;
 		};
+		25F5F5E123667D7A00545142 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25F5F5DC23667D7A00545142 /* BLTNBoard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52D6D97C1BEFF229002C0205;
+			remoteInfo = BLTNBoard;
+		};
+		25F5F5E323667D7A00545142 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25F5F5DC23667D7A00545142 /* BLTNBoard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 558D8086218DC5B5000ADAFD;
+			remoteInfo = BLTNBoardTests;
+		};
+		25F5F5E923667E4D00545142 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25F5F5DC23667D7A00545142 /* BLTNBoard.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 52D6D97B1BEFF229002C0205;
+			remoteInfo = BLTNBoard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		25F5F5E823667D9900545142 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				25F5F5E723667D9800545142 /* BLTNBoard.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		25A223D023616EC4004CF7BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +108,7 @@
 		25F3724C23612E220012BECF /* HDWallet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HDWallet.framework; sourceTree = "<group>"; };
 		25F372512361315E0012BECF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Input.strings; sourceTree = "<group>"; };
 		25F37253236131600012BECF /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Input.strings; sourceTree = "<group>"; };
+		25F5F5DC23667D7A00545142 /* BLTNBoard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BLTNBoard.xcodeproj; path = Frameworks/External/BulletinBoard/BLTNBoard.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +116,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25F3724D23612E220012BECF /* HDWallet.framework in Frameworks */,
+				25A2242723630C96004CF7BB /* HDWallet.framework in Frameworks */,
+				25F5F5E623667D9800545142 /* BLTNBoard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,9 +148,11 @@
 		25F371D7236069790012BECF = {
 			isa = PBXGroup;
 			children = (
+				25F5F5DC23667D7A00545142 /* BLTNBoard.xcodeproj */,
 				25F371E3236069790012BECF /* OriginalFramework */,
 				25F371EE236069790012BECF /* OriginalFrameworkTests */,
 				25F371E2236069790012BECF /* Products */,
+				25F5F5E523667D9800545142 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,6 +206,22 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		25F5F5DD23667D7A00545142 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25F5F5E223667D7A00545142 /* BLTNBoard.framework */,
+				25F5F5E423667D7A00545142 /* BLTNBoardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25F5F5E523667D9800545142 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -187,10 +244,12 @@
 				25F371DD236069790012BECF /* Sources */,
 				25F371DE236069790012BECF /* Frameworks */,
 				25F371DF236069790012BECF /* Resources */,
+				25F5F5E823667D9900545142 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				25F5F5EA23667E4D00545142 /* PBXTargetDependency */,
 			);
 			name = OriginalFramework;
 			productName = OriginalFramework;
@@ -246,6 +305,12 @@
 			mainGroup = 25F371D7236069790012BECF;
 			productRefGroup = 25F371E2236069790012BECF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 25F5F5DD23667D7A00545142 /* Products */;
+					ProjectRef = 25F5F5DC23667D7A00545142 /* BLTNBoard.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				25F371E0236069790012BECF /* OriginalFramework */,
@@ -253,6 +318,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		25F5F5E223667D7A00545142 /* BLTNBoard.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BLTNBoard.framework;
+			remoteRef = 25F5F5E123667D7A00545142 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		25F5F5E423667D7A00545142 /* BLTNBoardTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BLTNBoardTests.xctest;
+			remoteRef = 25F5F5E323667D7A00545142 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		25F371DF236069790012BECF /* Resources */ = {
@@ -313,6 +395,11 @@
 			isa = PBXTargetDependency;
 			target = 25F371E0236069790012BECF /* OriginalFramework */;
 			targetProxy = 25F371EC236069790012BECF /* PBXContainerItemProxy */;
+		};
+		25F5F5EA23667E4D00545142 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BLTNBoard;
+			targetProxy = 25F5F5E923667E4D00545142 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -391,7 +478,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -450,7 +537,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -479,6 +566,7 @@
 				);
 				INFOPLIST_FILE = OriginalFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -511,6 +599,7 @@
 				);
 				INFOPLIST_FILE = OriginalFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
