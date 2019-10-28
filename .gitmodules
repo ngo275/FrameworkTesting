@@ -1,0 +1,3 @@
+[submodule "Frameworks/External/BulletinBoard"]
+	path = Frameworks/External/BulletinBoard
+	url = https://github.com/alexaubry/BulletinBoard.git
