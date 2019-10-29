@@ -40,6 +40,15 @@
                                     <constraint firstAttribute="height" constant="28" id="5am-vy-AIV"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QV-AV-tfd">
+                                <rect key="frame" x="184" y="523" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" name="Gray"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapButton2:" destination="iwG-NB-kDx" eventType="touchUpInside" id="Nqk-do-j69"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" name="BackgroundDark"/>
                         <constraints>
@@ -48,13 +57,16 @@
                             <constraint firstItem="XAT-EL-fOL" firstAttribute="top" secondItem="Uwt-69-EMT" secondAttribute="bottom" constant="16" id="VGT-Fy-fWI"/>
                             <constraint firstItem="XAT-EL-fOL" firstAttribute="centerX" secondItem="xUz-83-hTF" secondAttribute="centerX" id="gzm-Do-aCX"/>
                             <constraint firstItem="Uwt-69-EMT" firstAttribute="top" secondItem="nvk-yy-fMF" secondAttribute="bottom" constant="16" id="khS-0B-NY0"/>
+                            <constraint firstItem="5QV-AV-tfd" firstAttribute="centerX" secondItem="xUz-83-hTF" secondAttribute="centerX" id="qGY-mW-0LW"/>
                             <constraint firstItem="Uwt-69-EMT" firstAttribute="centerX" secondItem="xUz-83-hTF" secondAttribute="centerX" id="u7x-il-bjR"/>
+                            <constraint firstItem="5QV-AV-tfd" firstAttribute="top" secondItem="XAT-EL-fOL" secondAttribute="bottom" constant="16" id="wfd-0u-kWH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="job-cf-Pgf"/>
                     </view>
                     <navigationItem key="navigationItem" id="X43-fU-nT1"/>
                     <connections>
                         <outlet property="button" destination="Uwt-69-EMT" id="mfx-Pt-fpT"/>
+                        <outlet property="button2" destination="5QV-AV-tfd" id="gUM-T8-lJg"/>
                         <outlet property="imageView" destination="XAT-EL-fOL" id="zT7-eT-gPU"/>
                     </connections>
                 </viewController>

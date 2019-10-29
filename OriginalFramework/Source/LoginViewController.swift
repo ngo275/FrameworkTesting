@@ -13,7 +13,9 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var button2: UIButton!
     
+    private let bundle = Bundle(for: LoginViewController.self)
     var bulletinManager: BLTNItemManager?
     
     static func instantiate() -> UINavigationController {
@@ -24,16 +26,13 @@ class LoginViewController: UIViewController {
     
     private func makeBulletinManager() -> BLTNItemManager {
         let page = BLTNPageItem(title: "Title!!")
-        page.image = UIImage(named: "logo_credify")
+        page.image = UIImage(named: "logo_credify", in: bundle, compatibleWith: nil)
         
         let appearance = BLTNItemAppearance()
         appearance.titleFontDescriptor = UIFont.abeatbyKai().fontDescriptor
         appearance.descriptionFontDescriptor = UIFont.quicksand().fontDescriptor
         appearance.buttonFontDescriptor = UIFont.quicksand().fontDescriptor
         page.appearance = appearance
-        page.isDismissable = false
-        page.requiresCloseButton = false
-        // page.descriptionText = String(format: "PendingTxDescription".localized(tableName: tn), presenter.pendingField)
         page.descriptionText = "Some Description"
         page.actionButtonTitle = "Execute"
         page.actionHandler = { item in
@@ -52,31 +51,44 @@ class LoginViewController: UIViewController {
     }
     
     func setupTexts() {
-        button.setTitle("Button".localized(bundle: Bundle(for: LoginViewController.self), tableName: "Login"), for: .normal)
+        button.setTitle("Button".localized(bundle: bundle, tableName: "Login"), for: .normal)
+        button2?.setTitle("Button".localized(bundle: bundle, tableName: "Login"), for: .normal)
     }
     
     func setupImage() {
-        imageView.image = UIImage(named: "ic_pincode_on", in: Bundle(for: LoginViewController.self), compatibleWith: nil)
+        imageView.image = UIImage(named: "ic_pincode_on", in: bundle, compatibleWith: nil)
     }
     
     @IBAction func tapButton(_ sender: Any) {
+        showAlert()
+    }
+    
+    @IBAction func tapButton2(_ sender: Any) {
+        
+    }
+    
+    func showAlert() {
+        let alert = AlertController(title: "Alert", message: "hahaha", preferredStyle: .alert)
+        let action = UIAlertAction(title: "NEXT", style: .default) { _ in
+            self.showPopup()
+        }
+        alert.addAction(action)
+        present(alert, animated: true)
+    }
+    
+    func showPopup() {
         self.bulletinManager = self.makeBulletinManager()
-        self.bulletinManager?.showBulletin(in: UIApplication.shared)
+        guard let vc = UIApplication.shared.topMostViewController() else {
+            NSLog("No view controller was found in UIApplication.shared")
+            return
+        }
+        self.bulletinManager?.showBulletin(above: vc)
     }
     
     func goNext() {
+        self.bulletinManager?.dismissBulletin()
         let vc = InputViewController.instantiate()
         navigationController?.pushViewController(vc, animated: true)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

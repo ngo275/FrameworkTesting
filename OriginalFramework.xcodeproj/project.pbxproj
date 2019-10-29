@@ -18,7 +18,6 @@
 		25A223E223617020004CF7BB /* abeatbyKaiRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25A223DC23617020004CF7BB /* abeatbyKaiRegular.otf */; };
 		25A223E4236170E8004CF7BB /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A223E3236170E8004CF7BB /* UIFont+Extension.swift */; };
 		25A2242723630C96004CF7BB /* HDWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F3724C23612E220012BECF /* HDWallet.framework */; };
-		25F371EB236069790012BECF /* OriginalFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F371E1236069790012BECF /* OriginalFramework.framework */; };
 		25F371F0236069790012BECF /* OriginalFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F371EF236069790012BECF /* OriginalFrameworkTests.swift */; };
 		25F371F2236069790012BECF /* OriginalFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F371E4236069790012BECF /* OriginalFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25F371FD2360956D0012BECF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F371FC2360956D0012BECF /* LoginViewController.swift */; };
@@ -30,8 +29,11 @@
 		25F3720D236099530012BECF /* Input.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F3720C236099530012BECF /* Input.storyboard */; };
 		25F3720F23609A120012BECF /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F3720E23609A120012BECF /* Main.swift */; };
 		25F372502361315E0012BECF /* Input.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25F372522361315E0012BECF /* Input.strings */; };
-		25F5F5E623667D9800545142 /* BLTNBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F5F5E223667D7A00545142 /* BLTNBoard.framework */; };
-		25F5F5E723667D9800545142 /* BLTNBoard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25F5F5E223667D7A00545142 /* BLTNBoard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		25F5F609236737DC00545142 /* BLTNBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F5F606236737C000545142 /* BLTNBoard.framework */; };
+		25F5F60A236737DC00545142 /* BLTNBoard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25F5F606236737C000545142 /* BLTNBoard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		25F5F6122367C94E00545142 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F5F6112367C94E00545142 /* AlertController.swift */; };
+		25F5F6152367DC3A00545142 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F5F6142367DC3A00545142 /* UIApplication+Extension.swift */; };
+		25F5F6182367DC5D00545142 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F5F6172367DC5D00545142 /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,23 +44,23 @@
 			remoteGlobalIDString = 25F371E0236069790012BECF;
 			remoteInfo = OriginalFramework;
 		};
-		25F5F5E123667D7A00545142 /* PBXContainerItemProxy */ = {
+		25F5F605236737C000545142 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 25F5F5DC23667D7A00545142 /* BLTNBoard.xcodeproj */;
+			containerPortal = 25F5F600236737C000545142 /* BLTNBoard.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 52D6D97C1BEFF229002C0205;
 			remoteInfo = BLTNBoard;
 		};
-		25F5F5E323667D7A00545142 /* PBXContainerItemProxy */ = {
+		25F5F607236737C000545142 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 25F5F5DC23667D7A00545142 /* BLTNBoard.xcodeproj */;
+			containerPortal = 25F5F600236737C000545142 /* BLTNBoard.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 558D8086218DC5B5000ADAFD;
 			remoteInfo = BLTNBoardTests;
 		};
-		25F5F5E923667E4D00545142 /* PBXContainerItemProxy */ = {
+		25F5F60B236737F100545142 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 25F5F5DC23667D7A00545142 /* BLTNBoard.xcodeproj */;
+			containerPortal = 25F5F600236737C000545142 /* BLTNBoard.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 52D6D97B1BEFF229002C0205;
 			remoteInfo = BLTNBoard;
@@ -72,7 +74,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				25F5F5E723667D9800545142 /* BLTNBoard.framework in Embed Frameworks */,
+				25F5F60A236737DC00545142 /* BLTNBoard.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,7 +110,10 @@
 		25F3724C23612E220012BECF /* HDWallet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HDWallet.framework; sourceTree = "<group>"; };
 		25F372512361315E0012BECF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Input.strings; sourceTree = "<group>"; };
 		25F37253236131600012BECF /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Input.strings; sourceTree = "<group>"; };
-		25F5F5DC23667D7A00545142 /* BLTNBoard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BLTNBoard.xcodeproj; path = Frameworks/External/BulletinBoard/BLTNBoard.xcodeproj; sourceTree = "<group>"; };
+		25F5F600236737C000545142 /* BLTNBoard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BLTNBoard.xcodeproj; path = Frameworks/External/BulletinBoard/BLTNBoard.xcodeproj; sourceTree = SOURCE_ROOT; };
+		25F5F6112367C94E00545142 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		25F5F6142367DC3A00545142 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		25F5F6172367DC5D00545142 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +121,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25F5F609236737DC00545142 /* BLTNBoard.framework in Frameworks */,
 				25A2242723630C96004CF7BB /* HDWallet.framework in Frameworks */,
-				25F5F5E623667D9800545142 /* BLTNBoard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +130,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25F371EB236069790012BECF /* OriginalFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +152,6 @@
 		25F371D7236069790012BECF = {
 			isa = PBXGroup;
 			children = (
-				25F5F5DC23667D7A00545142 /* BLTNBoard.xcodeproj */,
 				25F371E3236069790012BECF /* OriginalFramework */,
 				25F371EE236069790012BECF /* OriginalFrameworkTests */,
 				25F371E2236069790012BECF /* Products */,
@@ -168,6 +171,7 @@
 		25F371E3236069790012BECF /* OriginalFramework */ = {
 			isa = PBXGroup;
 			children = (
+				25F5F600236737C000545142 /* BLTNBoard.xcodeproj */,
 				25F3724C23612E220012BECF /* HDWallet.framework */,
 				25F371FB2360698F0012BECF /* Source */,
 				25F371E4236069790012BECF /* OriginalFramework.h */,
@@ -202,17 +206,11 @@
 				25A223D223616EF7004CF7BB /* Extension.swift */,
 				25A223D423616F16004CF7BB /* UIColor+Extension.swift */,
 				25A223E3236170E8004CF7BB /* UIFont+Extension.swift */,
+				25F5F6112367C94E00545142 /* AlertController.swift */,
+				25F5F6142367DC3A00545142 /* UIApplication+Extension.swift */,
+				25F5F6172367DC5D00545142 /* UIViewController+Extension.swift */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		25F5F5DD23667D7A00545142 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				25F5F5E223667D7A00545142 /* BLTNBoard.framework */,
-				25F5F5E423667D7A00545142 /* BLTNBoardTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		25F5F5E523667D9800545142 /* Frameworks */ = {
@@ -220,6 +218,15 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25F5F601236737C000545142 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25F5F606236737C000545142 /* BLTNBoard.framework */,
+				25F5F608236737C000545142 /* BLTNBoardTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +256,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				25F5F5EA23667E4D00545142 /* PBXTargetDependency */,
+				25F5F60C236737F100545142 /* PBXTargetDependency */,
 			);
 			name = OriginalFramework;
 			productName = OriginalFramework;
@@ -307,8 +314,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 25F5F5DD23667D7A00545142 /* Products */;
-					ProjectRef = 25F5F5DC23667D7A00545142 /* BLTNBoard.xcodeproj */;
+					ProductGroup = 25F5F601236737C000545142 /* Products */;
+					ProjectRef = 25F5F600236737C000545142 /* BLTNBoard.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -320,18 +327,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		25F5F5E223667D7A00545142 /* BLTNBoard.framework */ = {
+		25F5F606236737C000545142 /* BLTNBoard.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = BLTNBoard.framework;
-			remoteRef = 25F5F5E123667D7A00545142 /* PBXContainerItemProxy */;
+			remoteRef = 25F5F605236737C000545142 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		25F5F5E423667D7A00545142 /* BLTNBoardTests.xctest */ = {
+		25F5F608236737C000545142 /* BLTNBoardTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = BLTNBoardTests.xctest;
-			remoteRef = 25F5F5E323667D7A00545142 /* PBXContainerItemProxy */;
+			remoteRef = 25F5F607236737C000545142 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -370,12 +377,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				25A223D523616F16004CF7BB /* UIColor+Extension.swift in Sources */,
+				25F5F6182367DC5D00545142 /* UIViewController+Extension.swift in Sources */,
+				25F5F6122367C94E00545142 /* AlertController.swift in Sources */,
 				25F3720F23609A120012BECF /* Main.swift in Sources */,
 				25F37201236097FB0012BECF /* String+Extension.swift in Sources */,
 				25F372032360985A0012BECF /* Bundle+Extension.swift in Sources */,
 				25A223D323616EF7004CF7BB /* Extension.swift in Sources */,
 				25F371FD2360956D0012BECF /* LoginViewController.swift in Sources */,
 				25A223E4236170E8004CF7BB /* UIFont+Extension.swift in Sources */,
+				25F5F6152367DC3A00545142 /* UIApplication+Extension.swift in Sources */,
 				25F3720B2360994B0012BECF /* InputViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,10 +406,10 @@
 			target = 25F371E0236069790012BECF /* OriginalFramework */;
 			targetProxy = 25F371EC236069790012BECF /* PBXContainerItemProxy */;
 		};
-		25F5F5EA23667E4D00545142 /* PBXTargetDependency */ = {
+		25F5F60C236737F100545142 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BLTNBoard;
-			targetProxy = 25F5F5E923667E4D00545142 /* PBXContainerItemProxy */;
+			targetProxy = 25F5F60B236737F100545142 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

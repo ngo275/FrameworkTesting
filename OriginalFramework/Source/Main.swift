@@ -9,6 +9,8 @@
 import UIKit
 
 public struct TestFramework {
+    static var app: UIApplication!
+    
     public static func getVC() -> UINavigationController {
         UIFont.loadMyFonts
         setNavigationBar()
@@ -22,6 +24,10 @@ public struct TestFramework {
         let window = UIApplication.shared.keyWindow
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
+    }
+    
+    public static func configure(app: UIApplication) {
+        self.app = app
     }
     
     // MARK: - Private methods
